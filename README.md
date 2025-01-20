@@ -204,6 +204,11 @@ git merge --continue # Continue the merge after resolving conflicts
 git merge --no-ff <branch> # Merge a branch into the current branch with a merge commit
 git merge --squash <branch> # Merge a branch into the current branch with a single commit
 git merge --squash --no-commit <branch> # Merge a branch into the current branch with a single commit without committing
+# Steps to merge a branch
+# 1. Switch to the branch you want to merge
+# 2. fetch the latest changes from the remote repository
+# 3. Merge the changes from the remote branch
+# Example git switch dev > git fetch origin main > git merge -X origin/main 
 git merge -X theirs FETCH_HEAD # Merge changes from FETCH_HEAD with theirs strategy, remote changes will be kept in case of conflict
 git merge -X ours FETCH_HEAD # Merge changes from FETCH_HEAD with ours strategy, local changes will be kept in case of conflict
 ```
