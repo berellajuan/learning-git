@@ -395,6 +395,7 @@ git tag -d <tag> # Delete a tag
 git tag -v <tag> # Verify a tag
 git tag -s <tag> # Sign a tag
 git tag -n <tag> # Show the message of a tag
+git push origin --delete <tag> # Delete a remote tag
 ```
 ### How Semantic Versioning Works
 [Semantic - Learning](https://semver.org/)
